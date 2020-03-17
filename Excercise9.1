@@ -1,0 +1,30 @@
+Compare and contrast the linear search and binary search algorithms by searching for the numbers 
+45 and 54 in the list 3, 8, 12, 34, 54, 84, 91, 110.
+
+
+LinearSearch
+Works on Unsorted List             
+Iteration Implementation of int array find the match and exit
+Simpler Implementation
+Time Complexity O(N)
+
+
+To search 54  .. 3rd iteration 54 match found loop exits
+To search 45 entire int array is iterated match not found returns -1
+
+Binary-Search
+Works only on Sorted List
+Recursive Implementation
+Time Complexity O(log N)
+
+
+To search 54
+int[] is divided into two , less than 54 int[] is dicarded 54, 84, 91, 110
+2nd recursion 54,84  --> left hand side answer found base condition satisfied
+
+To search 45
+1st recursion  int[] divided into half
+3, 8, 12, 34 
+54, 84, 91, 110
+
+45 not found base condition met recursion exits with -1
